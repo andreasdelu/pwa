@@ -3,8 +3,8 @@
 	"short_name": "InsectHub",
 	"description": "This app loves cats and dogs.",
 	"display": "standalone",
-	"background-color": "#fffff",
-	"theme_color": "#fff",
+	"background-color": "#303030",
+	"theme_color": "#ffa500",
 	"icons": [
 		{
 			"src": "icon-192.png",
