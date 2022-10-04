@@ -1,9 +1,9 @@
 {
 	"name": "InsectHub",
 	"short_name": "InsectHub",
-	"description": "This app loves cats and dogs.",
+	"description": "Get your bug on!",
 	"display": "standalone",
-	"background-color": "#303030",
+	"background_color": "#1a1a1a",
 	"theme_color": "#ffa500",
 	"icons": [
 		{
@@ -17,5 +17,5 @@
 			"type": "image/png"
 		}
 	],
-	"start_url": "/pwa/index.html"
+	"start_url": "./index.html"
 }

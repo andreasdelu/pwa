@@ -12,7 +12,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: rgb(26, 26, 26);
+            background-color: #1a1a1a;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
@@ -193,7 +193,7 @@
                 position: fixed;
                 top: 70px;
                 right: 0;
-                background-color: rgb(14, 14, 14, 1);
+                background-color: #0e0e0e;
 
             }
 
@@ -348,14 +348,13 @@
     </div>
     <script>
         if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/pwa/serviceworker.js")
+            navigator.serviceWorker.register("serviceworker.js")
             console.log("Serviceworker found")
         }
         else {
             console.error("No Serviceworker")
         }
     </script>
-    <script src="app.js"></script>
 </body>
 
 </html>
