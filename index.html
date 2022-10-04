@@ -155,7 +155,67 @@
         li a:hover {
             color: orange;
         }
+
+        #menuIcon {
+            height: 30px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobileNav {
+            display: none;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .navlinks,
+            .login,
+            .categories {
+                display: none;
+            }
+
+            #menuIcon {
+                display: block;
+                margin-left: auto;
+
+            }
+
+            .mobileNav {
+                display: flex;
+                flex-direction: column;
+                height: calc(100vh - 70px);
+                width: 50vw;
+                position: fixed;
+                top: 70px;
+                right: 0;
+                background-color: rgb(14, 14, 14, 1);
+
+            }
+
+            .mobileNavlinks {
+                display: flex;
+                flex-direction: column;
+                gap: 5vh;
+                padding-top: 5vh;
+                padding-left: 2rem;
+            }
+
+            .mobileNav a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.4rem;
+            }
+
+            .mobileNav a:hover {
+                color: orange;
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -169,6 +229,27 @@
                 <a href="">Playlists</a>
             </div>
             <a class="login" href="">Login/Sign-up</a>
+            <img id="menuIcon" src="menu.svg" alt="">
+            <script>
+                document.getElementById("menuIcon").onclick = () => {
+                    const mobile = document.querySelector(".mobileNav");
+                    if (mobile.classList.contains("hide")) {
+                        mobile.classList.remove("hide")
+                    }
+                    else {
+                        mobile.classList.add("hide")
+                    }
+                }
+            </script>
+        </nav>
+        <nav class="mobileNav hide">
+            <div class="mobileNavlinks">
+                <a href="">Home</a>
+                <a href="">What's hot?</a>
+                <a href="">Categories</a>
+                <a href="">Playlists</a>
+                <a class="mobileLogin" href="">Login/Sign-up</a>
+            </div>
         </nav>
     </header>
 
@@ -262,241 +343,6 @@
                 <hr>
                 <p class="img-caption">550K views - 10k Likes</p>
             </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterflies.jpg');" class="image"></div>
-                <h3 class="img-title">Small winged bitch takes 6 inches of rock hard pollen to it's nose</h3>
-                <hr>
-                <p class="img-caption">1,5M views - 60k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('butterfly.jpg');" class="image"></div>
-                <h3 class="img-title">Green slut goes solo on HUGE flower</h3>
-                <hr>
-                <p class="img-caption">2,1M views - 100k Likes</p>
-            </div>
-            <div class="img-container">
-                <div style="background-image: url('dragonfly.jpg');" class="image"></div>
-                <h3 class="img-title">Big abdomen dragonchad strokes his long body</h3>
-                <hr>
-                <p class="img-caption">550K views - 10k Likes</p>
-            </div>
-
         </div>
     </div>
     <script>
