@@ -34,7 +34,7 @@ self.addEventListener("fetch", async function (e) {
 			// Return it if we found one.
 			if (cachedResponse) return cachedResponse;
 			// If we didn't find a match in the cache, use the network.
-			const response = fetch(e.request);
+			const response = await fetch(e.request);
 			return response;
 		})()
 	);
